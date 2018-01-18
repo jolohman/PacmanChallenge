@@ -10,6 +10,13 @@ namespace PacmanChallenge
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Pacman\n" +
+                "Please enter your paste in your simulation in here");
+            string inputConfirmation = Console.ReadLine();
+
+
+
+
         }
     }
 }
