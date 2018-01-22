@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LifeData.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="PlayPacman.cs" />
     <Compile Include="PlayerInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

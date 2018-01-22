@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PacmanChallenge
 {
-    class Player : PlayerInput
+    class PlayPacman : PlayerInput
     {
-        //Constants
-        const int Min_Lives = 0;
+        public static void Begin()
+        {
+            GetGamePlayInfo;
+        }
 
         //Constructors
-        public Player(string name )
+        public PlayPacman()
         {
             this.IsAlive = true;
             this.TotalLives = 3;
@@ -28,6 +31,12 @@ namespace PacmanChallenge
             return 0;
         }
 
-        public int
+        public static string[] GetGamePlayInfo()
+        {
+            var path = @"C:\DotNetProjects\PacmanChallenge\KataPacman-seq.txt";
+            var file = File.ReadAllText(path);
+            string[] stream = file.Split(',');
+            return stream;
+        }
     }
 }
